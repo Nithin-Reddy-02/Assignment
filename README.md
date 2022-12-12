@@ -5,6 +5,11 @@
 As per the new regulations from Heroku, the free usage has been stopped for hosting a website, so I didnot do it. Instead I have shown he snapshots of the application below.
 
 ***
+The ER Diagram for the database:
+<br>
+![](https://github.com/Nithin-Reddy-02/Assignment/blob/main/public/er.drawio.png)
+***
+
 ## Main Features
 ### Landing Page
 The landing page is a simple welcome page to familiarize with the application
