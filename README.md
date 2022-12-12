@@ -9,30 +9,28 @@ As per the new regulations from Heroku, the free usage has been stopped for host
 ### Landing Page
 The landing page is a simple welcome page to familiarize with the application
 <br>
-![](https://github.com/Zeph-T/SkillKits/blob/master/public/landing.png)
+![](https://github.com/Nithin-Reddy-02/Assignment/blob/main/public/landing.png)
 
 ### Book a Yoga Class
 The booking page contains a form to enter their details and to schedule a yoga class
 <br>
-![](https://github.com/Zeph-T/SkillKits/blob/master/public/login.png)
-![](https://github.com/Zeph-T/SkillKits/blob/master/public/signup.png)
+![](https://github.com/Nithin-Reddy-02/Assignment/blob/main/public/bookin.png)
 
 
 ### Payment
 Once you schedule your yoga, the payment needs to completed in order to complete the booking.
 <br>
-![](https://github.com/Zeph-T/SkillKits/blob/master/public/navbar.png)
+![](https://github.com/Nithin-Reddy-02/Assignment/blob/main/public/payment.png)
 
 ### My Schedule
 This page contains a form that asks for your details, after which you'll be navigated to edit page where you can edit your schedule for the next month
 <br>
-![](https://github.com/Zeph-T/SkillKits/blob/master/public/dashboard.png)
+![](https://github.com/Nithin-Reddy-02/Assignment/blob/main/public/getschedule.png)
 
 ### Edit Schedule
 This screen consists of form to edit your schedule from the next month.
 <br>
-![](https://github.com/Zeph-T/SkillKits/blob/master/public/subjectscreen.png)
-![](https://github.com/Zeph-T/SkillKits/blob/master/public/subjectscreen2.png)
+![](https://github.com/Nithin-Reddy-02/Assignment/blob/main/public/editschedule.png)
 
 ***
 ### Tech Stack and Concepts used:
