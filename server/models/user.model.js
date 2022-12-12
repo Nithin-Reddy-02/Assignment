@@ -17,12 +17,24 @@ const userSchema = new Schema(
       unique: [true, "email is already taken."],
       validate: [isEmail, "invalid email"],
     },
-    interviewsScheduled: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "Interview",
-      },
-    ],
+    dob:{
+      type: Date,
+      required : true
+    },
+    doj:{
+      type: Date,
+      required : true
+    },
+    batch:{
+      type: Number,
+      min:1,
+      max:4,
+      required:true,
+    },
+    payment:{
+      type: Number,
+      default:0,
+    }
   },
   { timestamps: true }
 );

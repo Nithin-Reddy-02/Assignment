@@ -7,9 +7,7 @@ module.exports = {
   general: {
     PORT: 4040,
     NODE_ENV: process.env.NODE_ENV,
+    URL: process.env.URL
   },
-  auth: {
-    EMAIL: process.env.EMAIL,
-    PASSWORD: process.env.PASSWORD,
-  },
+
 };

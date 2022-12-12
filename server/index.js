@@ -4,10 +4,10 @@ const compression = require("compression");
 const cors = require("cors");
 const initializeDBConnection = require("./config/db.connect");
 const errorHandlerRoute = require("./middlewares/errorHandler");
-const interviewRouter = require("./routers/interview.router");
+const batchRouter = require("./routers/batch.router");
 const userRouter = require("./routers/user.router");
 
-const importData = require("./seeder");
+const {importData,updateBatches} = require("./seeder");
 const constants = require("./config/constant");
 
 const app = express();
@@ -28,25 +28,19 @@ app.use(
 initializeDBConnection();
 
 // Prefill dummy users
-importData();
+// importData();
+
+//update batches
+updateBatches()
 
 // Routes
-app.use("/api/interviews", interviewRouter);
+app.use("/api/batch", batchRouter);
 app.use("/api/users", userRouter);
 
-if (constants.general.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/build")));
 
-  // anything that is not in our api.. will go to client
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client/build/index.html"));
-  });
-} else {
-  app.get("/", (req, res) => {
-    res.send("Hey, Welcome to the backend!");
-  });
-}
-
+app.get("/", (req, res) => {
+      res.send("Hey, Welcome to the backend!");
+    });
 // Not found route Middleware
 app.use(errorHandlerRoute.notFound);
 // Error Handler Route Middleware
@@ -55,3 +49,40 @@ app.use(errorHandlerRoute.errorHandler);
 app.listen(constants.general.PORT, () => {
   console.log("Backend Server is running.");
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// if (constants.general.NODE_ENV === "production") {
+  //   app.use(express.static(path.join(__dirname, "../client/build")));
+  
+  //   // anything that is not in our api.. will go to client
+  //   app.get("*", (req, res) => {
+  //     res.sendFile(path.join(__dirname, "../client/build/index.html"));
+  //   });
+  // } else {
+  //   app.get("/", (req, res) => {
+  //     res.send("Hey, Welcome to the backend!");
+  //   });
+  // }

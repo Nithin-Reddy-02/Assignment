@@ -7,20 +7,25 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="mr-4">
             <Link to="/" className="cursor-pointer font-bold">
-              Interview Scheduler
+              Book Your Yoga Class
             </Link>
           </div>
 
           <nav className="flex flex-grow justify-end">
             <ul className="flex flex-wrap items-center">
               <li>
+                <button className="cursor-pointer mr-4 btn-sm">
+                  Get Batch Data
+                </button>
+              </li>
+              <li>
                 <Link to="/upcoming" className="cursor-pointer mr-4 btn-sm">
-                  Upcoming Interviews
+                  My Schedule
                 </Link>
               </li>
               <li>
                 <Link to="/schedule" className="cursor-pointer btn-sm">
-                  Schedule Interview
+                  Book a Yoga Class
                 </Link>{" "}
               </li>
             </ul>

@@ -1,8 +1,11 @@
 const express = require("express");
-const { getAllUsersEmail } = require("../controllers/user.controller");
+const { addUser, getschedule, updateBatch } = require("../controllers/user.controller");
 
 const router = express.Router();
-
-router.route("/").get(getAllUsersEmail);
-
+router.get("/",(req,res)=>{
+    res.send("Status : Up and Running!");
+})
+router.post('/add',addUser);
+router.post('/getschedule',getschedule)
+router.post('/updatebatch',updateBatch)
 module.exports = router;
