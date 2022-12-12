@@ -7,7 +7,7 @@ As per the new regulations from Heroku, the free usage has been stopped for host
 ***
 The ER Diagram for the database:
 <br>
-![](https://github.com/Nithin-Reddy-02/Assignment/blob/main/public/er.drawio)
+![](https://github.com/Nithin-Reddy-02/Assignment/blob/main/public/er.png)
 ***
 
 ## Main Features
