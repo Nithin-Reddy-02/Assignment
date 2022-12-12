@@ -88,7 +88,7 @@ const Payment = () => {
                 className="btn mx-auto mt-6 bg-green-500 text-white"
                 disabled={isFormSubmitting}
               >
-                {isFormSubmitting ? "Paying..." : "Pay Now"}
+                {isFormSubmitting ? "Paying..." : "Pay Rs. 500/-"}
               </button>
             </form>
         </div>
